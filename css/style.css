@@ -3,3 +3,10 @@
     font-family: 'Calistoga', cursive;
     font-family: 'Inter', sans-serif;
 }
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/header-bg1.jpg');
+    background-size: cover;
+}
