@@ -22,7 +22,26 @@ header{
     padding-top: 4.735em;
     background-image: url('../images/header-bg1.png');
     background-size: cover;
+    position: relative;
+    z-index: 1;
+   
 }
+
+.fade{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0rem;
+    position:absolute;
+    background: -webkit-linear-gradient(top, 
+                rgba(18, 165, 155, 0.868) 0%, 
+                rgba(18, 165, 155, 0.868) 20%,
+                rgba(0,0,0,0) 80%,
+                rgba(0, 0, 0, 0) 100%
+    );
+}
+
+
 
 h1{
     font-family: 'Calistoga', cursive;
