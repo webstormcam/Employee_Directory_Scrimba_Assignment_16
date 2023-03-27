@@ -19,7 +19,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4.735em;
+    padding: 4.735em 0em;
     background-image: url('../images/header-bg1.png');
     background-size: cover;
     position: relative;
@@ -52,6 +52,7 @@ h1{
 
 .selectable-elements{
     display: flex;
+    margin-top: 1rem;
 }
 
 
@@ -66,9 +67,21 @@ select {
       background-repeat: no-repeat, repeat;
       background-position: right .7em top 50%, 0 0;
       background-size: 1.2em auto, 100%;
+      border-bottom-left-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+      border: none;
+      border-right: 1px solid #CBCBCB;
   }
   
   /* For IE  */
   select::-ms-expand {
     display: none;
+  }
+
+  .name-search{
+    padding-left: 1rem;
+    padding-right: 3rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border: none;
   }
