@@ -1,5 +1,5 @@
 import employees from "./employees.js";
-
+let rolePicked = document.getElementById('roleFinder')
 const allEmployeesRender = () =>{
 
     for(const person of employees  )
