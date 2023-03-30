@@ -1,12 +1,20 @@
 import employees from "./employees.js";
 let rolePicked = document.getElementById('roleFinder')
-const allEmployeesRender = () =>{
 
+
+
+const allEmployeesRender = () =>{
+    console.clear()
     for(const person of employees  )
-    if(person.team==="leadership"){
+    if(rolePicked.value===`everyone`){
+        console.log(person)
+    } else if(person.team===rolePicked.value){
         console.log(person)
     }
     
 }
 
+
+
+rolePicked.addEventListener('change',allEmployeesRender)
 allEmployeesRender()
