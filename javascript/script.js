@@ -1,7 +1,6 @@
 import employees from "./employees.js";
+
 let rolePicked = document.getElementById('roleFinder')
-
-
 
 const allEmployeesRender = () =>{
     console.clear()
@@ -13,8 +12,5 @@ const allEmployeesRender = () =>{
     }
     
 }
-
-
-
 rolePicked.addEventListener('change',allEmployeesRender)
 allEmployeesRender()
