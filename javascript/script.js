@@ -5,6 +5,7 @@ let rolePicked = document.getElementById('roleFinder')
 const allEmployeesRender = () =>{
     gridArea.innerHTML=``
     let people =``
+    let socialCollecter =``
     for(const person of employees  )
     if(rolePicked.value===`everyone`){
         people+=`<div class="grid-item">
@@ -26,7 +27,6 @@ const allEmployeesRender = () =>{
         </div>
         ${person.bio}
             <div class="socials">
-
             </div>
             </div>
 `
