@@ -15,8 +15,6 @@ const allEmployeesRender = () =>{
         </div>
         ${person.bio}
             <div class="socials">
-              <a href="https://twitter.com/"><img src="./images/twitter 2.png" alt=""></a>
-              <a href="https://www.linkedin.com/feed/"> <img src="./images/linkedin 1.png" alt=""></a>
             </div>
             </div>`
     } else if(person.team===rolePicked.value){
@@ -28,8 +26,7 @@ const allEmployeesRender = () =>{
         </div>
         ${person.bio}
             <div class="socials">
-              <a href="https://twitter.com/"><img src="./images/twitter 2.png" alt=""></a>
-              <a href="https://www.linkedin.com/feed/"> <img src="./images/linkedin 1.png" alt=""></a>
+
             </div>
             </div>
 `
