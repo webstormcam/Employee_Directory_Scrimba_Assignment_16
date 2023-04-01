@@ -46,10 +46,20 @@ const allEmployeesRender = () =>{
     gridArea.innerHTML=people
 }
 rolePicked.addEventListener('change',allEmployeesRender)
-NameSearch.addEventListener('keydown',function(){
-  if(NameSearch.value.includes('cat')){
-    console.log('lol')
-  }
+NameSearch.addEventListener('keypress',function(){
+    console.clear()
+for(const person of employees){
+   
+    if(person.name.toLowerCase().includes(NameSearch.value)){
+        console.log(person)
+    }
+}
+  
    
 })
 allEmployeesRender()
+
+// const str = "To be, or not to be, that is the question.";
+
+// console.log(str.includes("z"));
+
