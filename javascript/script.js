@@ -2,6 +2,7 @@ import employees from "./employees.js";
 const gridArea = document.getElementById('gridArea')
 let rolePicked = document.getElementById('roleFinder')
 
+const NameSearch = document.getElementById('NameSearch')
 
 
 const allEmployeesRender = () =>{
@@ -45,4 +46,10 @@ const allEmployeesRender = () =>{
     gridArea.innerHTML=people
 }
 rolePicked.addEventListener('change',allEmployeesRender)
+NameSearch.addEventListener('keydown',function(){
+  if(NameSearch.value.includes('cat')){
+    console.log('lol')
+  }
+   
+})
 allEmployeesRender()
