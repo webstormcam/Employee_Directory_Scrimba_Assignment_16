@@ -145,10 +145,11 @@ select {
 
   .socials{
     display: flex;
-    align-items: center;
+    align-items: end;
     width: 70px;
     justify-content: space-between;
     padding: 1.2em 0em;
+    height: 100%;
   }
 
   
