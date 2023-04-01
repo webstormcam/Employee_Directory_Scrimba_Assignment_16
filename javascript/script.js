@@ -46,10 +46,9 @@ const allEmployeesRender = () =>{
     gridArea.innerHTML=people
 }
 rolePicked.addEventListener('change',allEmployeesRender)
-NameSearch.addEventListener('keypress',function(){
+NameSearch.addEventListener('keyup',function(){
     console.clear()
 for(const person of employees){
-   
     if(person.name.toLowerCase().includes(NameSearch.value)){
         console.log(person)
     }
