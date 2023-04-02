@@ -57,7 +57,7 @@ for(const person of employees){
         if(person.social.linkedin){
             socialCollecter+=`<a href="${person.social.linkedin}"><img src="./images/linkedin 1.png"></a>`
         }
-    if(person.name.toLowerCase().includes(NameSearch.value)&& rolePicked.value==="everyone"){
+    if(person.name.toLowerCase().includes(NameSearch.value.toLowerCase())&& rolePicked.value==="everyone"){
         people+=`<div class="grid-item">
         <img class="profile-pic" src="./images/${person.image}" alt="A man with glasses">
         <div class="name-title">
@@ -69,7 +69,7 @@ for(const person of employees){
             ${socialCollecter}
             </div>
             </div>`
-    } else if(person.name.toLowerCase().includes(NameSearch.value)&& person.team===rolePicked.value){
+    } else if(person.name.toLowerCase().includes(NameSearch.value.toLowerCase())&& person.team===rolePicked.value){
         people+=`<div class="grid-item">
         <img class="profile-pic" src="./images/${person.image}" alt="A man with glasses">
         <div class="name-title">
