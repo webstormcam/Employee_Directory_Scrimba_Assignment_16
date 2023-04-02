@@ -84,8 +84,6 @@ for(const person of employees){
     }
 }
 gridArea.innerHTML=people
-  
-   
 })
 allEmployeesRender()
 
