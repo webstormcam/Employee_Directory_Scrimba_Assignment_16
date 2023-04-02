@@ -9,6 +9,7 @@ const allEmployeesRender = () =>{
     gridArea.innerHTML=``
     let people =``
     for(const person of employees  ){
+        NameSearch.value=""
         let socialCollecter =``
         if(person.social.twitter){
            socialCollecter+=`<a href="${person.social.twitter}"><img src="./images/twitter 2.png"></a>`
@@ -87,8 +88,4 @@ gridArea.innerHTML=people
    
 })
 allEmployeesRender()
-
-// const str = "To be, or not to be, that is the question.";
-
-// console.log(str.includes("z"));
 
