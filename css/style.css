@@ -151,10 +151,15 @@ select {
     height: 100%;
   }
 
-  @media screen and (max-width:500px) {
+  @media screen and (max-width:530px) {
     h1{
       font-size: 3rem;
     }
+
+    .employee-cards{
+      padding: 0em 2em;
+    }
+
 
   
 
